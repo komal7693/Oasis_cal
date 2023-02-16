@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator</title>
+</head>
+
+<body>
+  <h1>Calculator</h1>
+  <div class="calculator">
+    <input class="input" type="text" id="expression" disabled />
+    <br />
+    <br />
+    <input type="button" class="btn" value="1" onclick="calcutator('1')" />
+    <input type="button" class="btn" value="2" onclick="calcutator('2')" />
+    <input type="button" class="btn" value="3" onclick="calcutator('3')" />
+    <input type="button" value="+" class="operator" onclick="calcutator('+')" />
+    <br />
+    <input type="button" class="btn" value="4" onclick="calcutator('4')" />
+    <input type="button" class="btn" value="5" onclick="calcutator('5')" />
+    <input type="button" class="btn" value="6" onclick="calcutator('6')" />
+    <input type="button" value="-" class="operator" onclick="calcutator('-')" />
+    <br />
+    <input type="button" class="btn" value="7" onclick="calcutator('7')" />
+    <input type="button" class="btn" value="8" onclick="calcutator('8')" />
+    <input type="button"class="btn"  value="9" onclick="calcutator('9')" />
+    <input type="button" value="*" class="operator" onclick="calcutator('*')" />
+    <br />
+    <input type="button" value="%" class="operator" onclick="calcutator('%')" />
+    <input type="button" class="btn" value="0" onclick="calcutator('0')" />
+    <input type="button" class="operator" value="=" onclick="calculate()" />
+    <input type="button" value="/" class="operator" onclick="calcutator('/')" />
+    <br />
+    <input type="button" class="btn-ac" value="AC" onclick="clearExpression()" />
+    <input type="button" class="btn-ac" value="C" onclick="backspace()" />
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
